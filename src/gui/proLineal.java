@@ -77,7 +77,7 @@ public class proLineal extends javax.swing.JFrame {
         lblIndicacion.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         lblIndicacion.setForeground(new java.awt.Color(255, 255, 255));
         lblIndicacion.setText("Indicaciones: introduzca dos números complejos para calular las operaciones indicadas.");
-        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 550, 20));
+        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 550, 20));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot.setText("Alan Rigel Álvarez Lule");
@@ -91,11 +91,17 @@ public class proLineal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();

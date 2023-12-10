@@ -33,10 +33,8 @@ public class LineasDeEspera extends javax.swing.JFrame {
         lblLogoComplexNumbers = new javax.swing.JLabel();
         lblTema1 = new javax.swing.JLabel();
         lblIndicacion = new javax.swing.JLabel();
-        lblArgZ1 = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,39 +71,21 @@ public class LineasDeEspera extends javax.swing.JFrame {
 
         lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTema1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTema1.setText("Tema");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 560, 30));
+        lblTema1.setText("Tema 4: Lineas de espera ");
+        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 560, 30));
 
         lblIndicacion.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         lblIndicacion.setForeground(new java.awt.Color(255, 255, 255));
         lblIndicacion.setText("Indicaciones: introduzca dos números complejos para calular las operaciones indicadas.");
-        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 550, 20));
-
-        lblArgZ1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblArgZ1.setForeground(new java.awt.Color(255, 255, 255));
-        lblArgZ1.setText("Arg(Z1):");
-        pnlComplexNumbers.add(lblArgZ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, -1, -1));
+        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 550, 20));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Francisco Javier Montecillo Puente");
-        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 470, -1, -1));
+        lblFoot.setText("Alan Rigel Álvarez Lule");
+        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 480, -1, -1));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
-        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, -1, -1));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
-        );
-
-        pnlComplexNumbers.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 600, 250));
+        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 460, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -182,8 +162,6 @@ public class LineasDeEspera extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblArgZ1;
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;

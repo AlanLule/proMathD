@@ -41,6 +41,8 @@ public class MainProMathD extends javax.swing.JFrame {
         TransformFourier1 = new javax.swing.JLabel();
         TransformFourier2 = new javax.swing.JLabel();
         lblLineas = new javax.swing.JLabel();
+        TransformFourier3 = new javax.swing.JLabel();
+        lblLineas1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,7 +66,7 @@ public class MainProMathD extends javax.swing.JFrame {
                 logproglinealMouseExited(evt);
             }
         });
-        bg.add(logproglineal, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 130, 90));
+        bg.add(logproglineal, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 130, 90));
 
         SeriesFourier.setBackground(new java.awt.Color(255, 255, 255));
         SeriesFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mTransport.png"))); // NOI18N
@@ -81,7 +83,7 @@ public class MainProMathD extends javax.swing.JFrame {
                 SeriesFourierMouseExited(evt);
             }
         });
-        bg.add(SeriesFourier, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 120, 90));
+        bg.add(SeriesFourier, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, 120, 90));
 
         logoTecNM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo itess-blanco new-small.png"))); // NOI18N
         bg.add(logoTecNM, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 210, 80));
@@ -96,13 +98,13 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(bgLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 364, 500));
 
         lblmTransporte.setText("Tema2. MTransporte");
-        bg.add(lblmTransporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 190, -1, -1));
+        bg.add(lblmTransporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, -1, -1));
 
         lblprogramacionLineal.setText("Tema1. ProgLineal");
-        bg.add(lblprogramacionLineal, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 120, -1));
+        bg.add(lblprogramacionLineal, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 120, -1));
 
         lblinventarios.setText("Tema4. Inventarios");
-        bg.add(lblinventarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 310, -1, -1));
+        bg.add(lblinventarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, -1));
 
         TransformFourier.setBackground(new java.awt.Color(255, 255, 255));
         TransformFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/inventarios.png"))); // NOI18N
@@ -119,7 +121,7 @@ public class MainProMathD extends javax.swing.JFrame {
                 TransformFourierMouseExited(evt);
             }
         });
-        bg.add(TransformFourier, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 220, 110, 90));
+        bg.add(TransformFourier, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 110, 90));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
@@ -135,7 +137,7 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 240, 20));
 
         lblplaneacion.setText("Tema3. planeacion");
-        bg.add(lblplaneacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, -1));
+        bg.add(lblplaneacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 170, -1, -1));
 
         TransformFourier1.setBackground(new java.awt.Color(255, 255, 255));
         TransformFourier1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/planeacion.png"))); // NOI18N
@@ -152,10 +154,10 @@ public class MainProMathD extends javax.swing.JFrame {
                 TransformFourier1MouseExited(evt);
             }
         });
-        bg.add(TransformFourier1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 110, 90));
+        bg.add(TransformFourier1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 80, 110, 90));
 
         TransformFourier2.setBackground(new java.awt.Color(255, 255, 255));
-        TransformFourier2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lespera.png"))); // NOI18N
+        TransformFourier2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/teoriaDesicion.png"))); // NOI18N
         TransformFourier2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         TransformFourier2.setOpaque(true);
         TransformFourier2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -169,10 +171,30 @@ public class MainProMathD extends javax.swing.JFrame {
                 TransformFourier2MouseExited(evt);
             }
         });
-        bg.add(TransformFourier2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, 110, 90));
+        bg.add(TransformFourier2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 200, 110, 90));
 
-        lblLineas.setText("Tema4. LineasEspera");
-        bg.add(lblLineas, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, -1, -1));
+        lblLineas.setText("Tema5. Teoria de Decisión");
+        bg.add(lblLineas, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, -1, -1));
+
+        TransformFourier3.setBackground(new java.awt.Color(255, 255, 255));
+        TransformFourier3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lespera.png"))); // NOI18N
+        TransformFourier3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        TransformFourier3.setOpaque(true);
+        TransformFourier3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TransformFourier3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                TransformFourier3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                TransformFourier3MouseExited(evt);
+            }
+        });
+        bg.add(TransformFourier3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, 110, 90));
+
+        lblLineas1.setText("Tema4. LineasEspera");
+        bg.add(lblLineas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -264,6 +286,18 @@ public class MainProMathD extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TransformFourier2MouseExited
 
+    private void TransformFourier3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TransformFourier3MouseClicked
+
+    private void TransformFourier3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TransformFourier3MouseEntered
+
+    private void TransformFourier3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier3MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TransformFourier3MouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -307,6 +341,7 @@ public class MainProMathD extends javax.swing.JFrame {
     private javax.swing.JLabel TransformFourier;
     private javax.swing.JLabel TransformFourier1;
     private javax.swing.JLabel TransformFourier2;
+    private javax.swing.JLabel TransformFourier3;
     private javax.swing.JPanel bg;
     private javax.swing.JLabel bgLogo;
     private javax.swing.JLabel jLabel1;
@@ -314,6 +349,7 @@ public class MainProMathD extends javax.swing.JFrame {
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
     private javax.swing.JLabel lblLineas;
+    private javax.swing.JLabel lblLineas1;
     private javax.swing.JLabel lblinventarios;
     private javax.swing.JLabel lblmTransporte;
     private javax.swing.JLabel lblplaneacion;
