@@ -50,7 +50,7 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         logproglineal.setBackground(new java.awt.Color(255, 255, 255));
-        logproglineal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ejemplo.png"))); // NOI18N
+        logproglineal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lilineal_1.png"))); // NOI18N
         logproglineal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         logproglineal.setOpaque(true);
         logproglineal.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -67,7 +67,7 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(logproglineal, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 130, 90));
 
         SeriesFourier.setBackground(new java.awt.Color(255, 255, 255));
-        SeriesFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
+        SeriesFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mTransport.png"))); // NOI18N
         SeriesFourier.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         SeriesFourier.setOpaque(true);
         SeriesFourier.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -105,7 +105,7 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(lblinventarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 310, -1, -1));
 
         TransformFourier.setBackground(new java.awt.Color(255, 255, 255));
-        TransformFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tema3_FurierTransform_logo.png"))); // NOI18N
+        TransformFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/inventarios.png"))); // NOI18N
         TransformFourier.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         TransformFourier.setOpaque(true);
         TransformFourier.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -138,7 +138,7 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(lblplaneacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, -1));
 
         TransformFourier1.setBackground(new java.awt.Color(255, 255, 255));
-        TransformFourier1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tema3_FurierTransform_logo.png"))); // NOI18N
+        TransformFourier1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/planeacion.png"))); // NOI18N
         TransformFourier1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         TransformFourier1.setOpaque(true);
         TransformFourier1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -155,7 +155,7 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(TransformFourier1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 110, 90));
 
         TransformFourier2.setBackground(new java.awt.Color(255, 255, 255));
-        TransformFourier2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tema3_FurierTransform_logo.png"))); // NOI18N
+        TransformFourier2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lespera.png"))); // NOI18N
         TransformFourier2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         TransformFourier2.setOpaque(true);
         TransformFourier2.addMouseListener(new java.awt.event.MouseAdapter() {
