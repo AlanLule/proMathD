@@ -5,7 +5,7 @@
 package app;
 
 import gui.MainProMathD;
-import gui.Introduction;
+import gui.proLineal;
 import gui.FourierSeries;
 import javax.swing.JFrame;
 

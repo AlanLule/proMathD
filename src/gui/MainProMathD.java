@@ -208,7 +208,7 @@ public class MainProMathD extends javax.swing.JFrame {
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.introduction = new Introduction(this.main);
+        main.introduction = new proLineal(this.main);
         main.introduction.setVisible(true);        
     }//GEN-LAST:event_logproglinealMouseClicked
 
