@@ -39,11 +39,11 @@ public class TInventarios extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        pnlComplexNumbers.setBackground(new java.awt.Color(0, 0, 0));
+        pnlComplexNumbers.setBackground(new java.awt.Color(0, 0, 51));
         pnlComplexNumbers.setPreferredSize(new java.awt.Dimension(800, 500));
         pnlComplexNumbers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblHOME.setBackground(new java.awt.Color(0, 0, 0));
+        lblHOME.setBackground(new java.awt.Color(0, 0, 51));
         lblHOME.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         lblHOME.setForeground(new java.awt.Color(255, 78, 0));
         lblHOME.setText("Inicio");

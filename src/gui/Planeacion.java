@@ -32,7 +32,6 @@ public class Planeacion extends javax.swing.JFrame {
         lblComplexNumbers = new javax.swing.JLabel();
         lblLogoComplexNumbers = new javax.swing.JLabel();
         lblTema1 = new javax.swing.JLabel();
-        lblIndicacion = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
 
@@ -42,7 +41,7 @@ public class Planeacion extends javax.swing.JFrame {
         pnlComplexNumbers.setPreferredSize(new java.awt.Dimension(800, 500));
         pnlComplexNumbers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblHOME.setBackground(new java.awt.Color(0, 0, 0));
+        lblHOME.setBackground(new java.awt.Color(0, 0, 51));
         lblHOME.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         lblHOME.setForeground(new java.awt.Color(255, 78, 0));
         lblHOME.setText("Inicio");
@@ -58,26 +57,21 @@ public class Planeacion extends javax.swing.JFrame {
                 lblHOMEMouseExited(evt);
             }
         });
-        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 70, 50));
+        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 70, 50));
 
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
-        lblComplexNumbers.setText("Lineas De Espera");
-        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 430, 50));
+        lblComplexNumbers.setText("Planeación");
+        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 430, 50));
 
-        lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lineaslogo.png"))); // NOI18N
+        lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/planeacion.png"))); // NOI18N
         lblLogoComplexNumbers.setText("jLabel1");
-        pnlComplexNumbers.add(lblLogoComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 120));
+        pnlComplexNumbers.add(lblLogoComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 120));
 
         lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTema1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTema1.setText("Tema 4: Lineas de espera ");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 560, 30));
-
-        lblIndicacion.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        lblIndicacion.setForeground(new java.awt.Color(255, 255, 255));
-        lblIndicacion.setText("Indicaciones: introduzca dos números complejos para calular las operaciones indicadas.");
-        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 550, 20));
+        lblTema1.setText("Tema 3: Planeación");
+        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 560, 30));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot.setText("Alan Rigel Álvarez Lule");
@@ -174,7 +168,6 @@ public class Planeacion extends javax.swing.JFrame {
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
     private javax.swing.JLabel lblHOME;
-    private javax.swing.JLabel lblIndicacion;
     private javax.swing.JLabel lblLogoComplexNumbers;
     private javax.swing.JLabel lblTema1;
     private javax.swing.JPanel pnlComplexNumbers;
