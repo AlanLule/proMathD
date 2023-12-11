@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package gui;
 
 import java.awt.Color;
@@ -10,13 +7,14 @@ import app.Main;
  *
  * @author xeon
  */
-public class FourierTransform extends javax.swing.JFrame {
+public class Desicion extends javax.swing.JFrame {
     Main main;
     /**
      * Creates new form ComplexNumberASYS
      */
-    public FourierTransform(Main main) {
+    public Desicion(Main main) {
         initComponents();
+        
         this.main = main;
     }
 
@@ -32,16 +30,15 @@ public class FourierTransform extends javax.swing.JFrame {
         pnlComplexNumbers = new javax.swing.JPanel();
         lblHOME = new javax.swing.JLabel();
         lblComplexNumbers = new javax.swing.JLabel();
-        SeriesFourier = new javax.swing.JLabel();
+        lblLogoComplexNumbers = new javax.swing.JLabel();
         lblTema1 = new javax.swing.JLabel();
         lblIndicacion = new javax.swing.JLabel();
-        lblIndicacion1 = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        pnlComplexNumbers.setBackground(new java.awt.Color(0, 0, 0));
+        pnlComplexNumbers.setBackground(new java.awt.Color(0, 0, 51));
         pnlComplexNumbers.setPreferredSize(new java.awt.Dimension(800, 500));
         pnlComplexNumbers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -61,95 +58,66 @@ public class FourierTransform extends javax.swing.JFrame {
                 lblHOMEMouseExited(evt);
             }
         });
-        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 70, 50));
+        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 70, 50));
 
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
-        lblComplexNumbers.setForeground(new java.awt.Color(205, 0, 255));
-        lblComplexNumbers.setText("Transformada de Fourier");
-        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 500, 50));
+        lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
+        lblComplexNumbers.setText("Lineas De Espera");
+        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 430, 50));
 
-        SeriesFourier.setBackground(new java.awt.Color(0, 0, 0));
-        SeriesFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tema3_FurierTransform_logo.png"))); // NOI18N
-        SeriesFourier.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        SeriesFourier.setOpaque(true);
-        SeriesFourier.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                SeriesFourierMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                SeriesFourierMouseExited(evt);
-            }
-        });
-        pnlComplexNumbers.add(SeriesFourier, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 120, 90));
+        lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lineaslogo.png"))); // NOI18N
+        lblLogoComplexNumbers.setText("jLabel1");
+        pnlComplexNumbers.add(lblLogoComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 120));
 
         lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTema1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTema1.setText("Tema 3. Señales no periodicas: Transformada de Fourier");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 570, 30));
+        lblTema1.setText("Tema 4: Lineas de espera ");
+        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 560, 30));
 
         lblIndicacion.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         lblIndicacion.setForeground(new java.awt.Color(255, 255, 255));
-        lblIndicacion.setText("F(w), | F(w) | y phase F(w)");
-        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 140, 170, 20));
-
-        lblIndicacion1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        lblIndicacion1.setForeground(new java.awt.Color(255, 255, 255));
-        lblIndicacion1.setText("Indicaciones: introduzca el numero de puntos para calcular la Transformada de Fourier");
-        pnlComplexNumbers.add(lblIndicacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 580, 20));
+        lblIndicacion.setText("Indicaciones: introduzca dos números complejos para calular las operaciones indicadas.");
+        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 550, 20));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Francisco Javier Montecillo Puente");
-        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 470, -1, -1));
+        lblFoot.setText("Alan Rigel Álvarez Lule");
+        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 480, -1, -1));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
-        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, -1, -1));
+        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 460, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lblHOMEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseEntered
-        // TODO add your handling code here:
-        lblHOME.setBackground(Color.yellow);
-    }//GEN-LAST:event_lblHOMEMouseEntered
 
     private void lblHOMEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseExited
         // TODO add your handling code here:
         lblHOME.setBackground(Color.black);
     }//GEN-LAST:event_lblHOMEMouseExited
 
+    private void lblHOMEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseEntered
+        // TODO add your handling code here:
+        lblHOME.setBackground(Color.yellow);
+    }//GEN-LAST:event_lblHOMEMouseEntered
+
     private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
-       // TODO add your handling code here:
-       main.fourierTransform.setVisible(false);
-       main.fourierTransform = null;
-       
-       main.mainASYS.setVisible(true);
+        // TODO add your handling code here:
+        main.introduction.setVisible(false);
+        main.introduction = null;
+
+        main.mainASYS.setVisible(true);
     }//GEN-LAST:event_lblHOMEMouseClicked
-
-    private void SeriesFourierMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SeriesFourierMouseEntered
-        SeriesFourier.setBackground(Color.yellow);
-    }//GEN-LAST:event_SeriesFourierMouseEntered
-
-    private void SeriesFourierMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SeriesFourierMouseExited
-        SeriesFourier.setBackground(Color.black);
-    }//GEN-LAST:event_SeriesFourierMouseExited
 
     /**
      * @param args the command line arguments
@@ -168,13 +136,13 @@ public class FourierTransform extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FourierTransform.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Desicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FourierTransform.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Desicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FourierTransform.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Desicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FourierTransform.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Desicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -202,13 +170,12 @@ public class FourierTransform extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel SeriesFourier;
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
     private javax.swing.JLabel lblHOME;
     private javax.swing.JLabel lblIndicacion;
-    private javax.swing.JLabel lblIndicacion1;
+    private javax.swing.JLabel lblLogoComplexNumbers;
     private javax.swing.JLabel lblTema1;
     private javax.swing.JPanel pnlComplexNumbers;
     // End of variables declaration//GEN-END:variables

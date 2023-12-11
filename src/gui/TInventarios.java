@@ -10,12 +10,12 @@ import app.Main;
  *
  * @author xeon
  */
-public class MTransporte extends javax.swing.JFrame {
+public class TInventarios extends javax.swing.JFrame {
     Main main;
     /**
      * Creates new form ComplexNumberASYS
      */
-    public MTransporte(Main main) {
+    public TInventarios(Main main) {
         initComponents();
         this.main = main;
     }
@@ -34,8 +34,6 @@ public class MTransporte extends javax.swing.JFrame {
         lblComplexNumbers = new javax.swing.JLabel();
         SeriesFourier = new javax.swing.JLabel();
         lblTema1 = new javax.swing.JLabel();
-        lblIndicacion = new javax.swing.JLabel();
-        lblIndicacion1 = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
 
@@ -61,15 +59,16 @@ public class MTransporte extends javax.swing.JFrame {
                 lblHOMEMouseExited(evt);
             }
         });
-        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 70, 50));
+        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 70, 50));
 
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
-        lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
-        lblComplexNumbers.setText("Metodo de Transporte");
-        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 380, 50));
+        lblComplexNumbers.setForeground(new java.awt.Color(205, 0, 255));
+        lblComplexNumbers.setText("Teoria de inventarios");
+        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 500, 50));
 
         SeriesFourier.setBackground(new java.awt.Color(0, 0, 0));
-        SeriesFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mTransport.png"))); // NOI18N
+        SeriesFourier.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SeriesFourier.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/inventarios.png"))); // NOI18N
         SeriesFourier.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         SeriesFourier.setOpaque(true);
         SeriesFourier.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -84,21 +83,11 @@ public class MTransporte extends javax.swing.JFrame {
 
         lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTema1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTema1.setText("Tema 2. Metodo de transporte");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 570, 30));
-
-        lblIndicacion.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        lblIndicacion.setForeground(new java.awt.Color(255, 255, 255));
-        lblIndicacion.setText("s(t) = a/2 +  Σ (an Cos wnt  + bn Sin wnt)");
-        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 280, 20));
-
-        lblIndicacion1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        lblIndicacion1.setForeground(new java.awt.Color(255, 255, 255));
-        lblIndicacion1.setText("Indicaciones: introduzca el valor de n para calulcar la aproximación de la funcion indicada.");
-        pnlComplexNumbers.add(lblIndicacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 580, 20));
+        lblTema1.setText("Tema 4. Teoria de inventarios");
+        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 570, 30));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Alan Rigel Alvarez Lule");
+        lblFoot.setText("Alan Rigel Álvarez Lule");
         pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, -1, -1));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
@@ -109,11 +98,17 @@ public class MTransporte extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -131,8 +126,8 @@ public class MTransporte extends javax.swing.JFrame {
 
     private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
        // TODO add your handling code here:
-       main.fourierSeries.setVisible(false);
-       main.fourierSeries = null;
+       main.fourierTransform.setVisible(false);
+       main.fourierTransform = null;
        
        main.mainASYS.setVisible(true);
     }//GEN-LAST:event_lblHOMEMouseClicked
@@ -162,14 +157,30 @@ public class MTransporte extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MTransporte.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TInventarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MTransporte.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TInventarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MTransporte.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TInventarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MTransporte.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TInventarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -201,8 +212,6 @@ public class MTransporte extends javax.swing.JFrame {
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
     private javax.swing.JLabel lblHOME;
-    private javax.swing.JLabel lblIndicacion;
-    private javax.swing.JLabel lblIndicacion1;
     private javax.swing.JLabel lblTema1;
     private javax.swing.JPanel pnlComplexNumbers;
     // End of variables declaration//GEN-END:variables

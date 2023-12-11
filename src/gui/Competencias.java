@@ -7,12 +7,12 @@ import app.Main;
  *
  * @author xeon
  */
-public class proLineal extends javax.swing.JFrame {
+public class Competencias extends javax.swing.JFrame {
     Main main;
     /**
      * Creates new form ComplexNumberASYS
      */
-    public proLineal(Main main) {
+    public Competencias(Main main) {
         initComponents();
         
         this.main = main;
@@ -37,11 +37,11 @@ public class proLineal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        pnlComplexNumbers.setBackground(new java.awt.Color(0, 0, 0));
+        pnlComplexNumbers.setBackground(new java.awt.Color(0, 0, 51));
         pnlComplexNumbers.setPreferredSize(new java.awt.Dimension(800, 500));
         pnlComplexNumbers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblHOME.setBackground(new java.awt.Color(0, 0, 0));
+        lblHOME.setBackground(new java.awt.Color(0, 0, 51));
         lblHOME.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         lblHOME.setForeground(new java.awt.Color(255, 78, 0));
         lblHOME.setText("Inicio");
@@ -57,66 +57,61 @@ public class proLineal extends javax.swing.JFrame {
                 lblHOMEMouseExited(evt);
             }
         });
-        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 70, 50));
+        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 70, 50));
 
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
-        lblComplexNumbers.setText("Programación Lineal");
-        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 430, 50));
+        lblComplexNumbers.setText("Competencias");
+        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 430, 50));
 
-        lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lilineal_1.png"))); // NOI18N
+        lblLogoComplexNumbers.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/competencias.png"))); // NOI18N
         lblLogoComplexNumbers.setText("jLabel1");
-        pnlComplexNumbers.add(lblLogoComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 120));
+        pnlComplexNumbers.add(lblLogoComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 110, 120));
 
         lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTema1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTema1.setText("Tema 1. Programación Lineal");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 560, 30));
+        lblTema1.setText("Competencias esperadas");
+        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 560, 30));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot.setText("Alan Rigel Álvarez Lule");
-        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, -1, -1));
+        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 480, -1, -1));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
-        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 460, -1, -1));
+        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 460, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lblHOMEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseEntered
-        // TODO add your handling code here:
-        lblHOME.setBackground(Color.yellow);
-    }//GEN-LAST:event_lblHOMEMouseEntered
 
     private void lblHOMEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseExited
         // TODO add your handling code here:
         lblHOME.setBackground(Color.black);
     }//GEN-LAST:event_lblHOMEMouseExited
 
+    private void lblHOMEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseEntered
+        // TODO add your handling code here:
+        lblHOME.setBackground(Color.yellow);
+    }//GEN-LAST:event_lblHOMEMouseEntered
+
     private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
-       // TODO add your handling code here:
-       main.introduction.setVisible(false);
-       main.introduction = null;
-       
-       main.mainASYS.setVisible(true);
+        // TODO add your handling code here:
+        main.introduction.setVisible(false);
+        main.introduction = null;
+
+        main.mainASYS.setVisible(true);
     }//GEN-LAST:event_lblHOMEMouseClicked
 
     /**
@@ -136,14 +131,22 @@ public class proLineal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(proLineal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Competencias.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(proLineal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Competencias.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(proLineal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Competencias.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(proLineal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Competencias.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
