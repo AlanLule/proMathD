@@ -28,7 +28,6 @@ public class Competencias extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlComplexNumbers = new javax.swing.JPanel();
-        lblHOME = new javax.swing.JLabel();
         lblComplexNumbers = new javax.swing.JLabel();
         lblLogoComplexNumbers = new javax.swing.JLabel();
         lblTema1 = new javax.swing.JLabel();
@@ -49,24 +48,6 @@ public class Competencias extends javax.swing.JFrame {
         pnlComplexNumbers.setBackground(new java.awt.Color(0, 0, 51));
         pnlComplexNumbers.setPreferredSize(new java.awt.Dimension(800, 500));
         pnlComplexNumbers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblHOME.setBackground(new java.awt.Color(0, 0, 51));
-        lblHOME.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
-        lblHOME.setForeground(new java.awt.Color(255, 78, 0));
-        lblHOME.setText("Inicio");
-        lblHOME.setOpaque(true);
-        lblHOME.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblHOMEMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lblHOMEMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                lblHOMEMouseExited(evt);
-            }
-        });
-        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 70, 50));
 
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
@@ -139,24 +120,6 @@ public class Competencias extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lblHOMEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseExited
-        // TODO add your handling code here:
-        lblHOME.setBackground(Color.black);
-    }//GEN-LAST:event_lblHOMEMouseExited
-
-    private void lblHOMEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseEntered
-        // TODO add your handling code here:
-        lblHOME.setBackground(Color.yellow);
-    }//GEN-LAST:event_lblHOMEMouseEntered
-
-    private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
-        // TODO add your handling code here:
-        main.introduction.setVisible(false);
-        main.introduction = null;
-
-        main.mainASYS.setVisible(true);
-    }//GEN-LAST:event_lblHOMEMouseClicked
 
     /**
      * @param args the command line arguments
@@ -237,7 +200,6 @@ public class Competencias extends javax.swing.JFrame {
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
-    private javax.swing.JLabel lblHOME;
     private javax.swing.JLabel lblLogoComplexNumbers;
     private javax.swing.JLabel lblTema1;
     private javax.swing.JPanel pnlComplexNumbers;
