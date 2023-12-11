@@ -20,6 +20,7 @@ public class Main {
     public JFrame fourierSeries;
     public JFrame fourierTransform;
     public JFrame discreteSystem;
+    public Object Planeacion;
     
     public Main() {
         mainASYS = new MainProMathD(this);
@@ -38,5 +39,11 @@ public class Main {
     public static void main(String[] args) {
                 new Main().run();
         
+    }
+
+    public class Planeacion {
+
+        public Planeacion() {
+        }
     }
 }
