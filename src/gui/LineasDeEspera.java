@@ -34,6 +34,7 @@ public class LineasDeEspera extends javax.swing.JFrame {
         lblIndicacion = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
+        lblHOME = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,6 +69,24 @@ public class LineasDeEspera extends javax.swing.JFrame {
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
         pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 460, -1, -1));
 
+        lblHOME.setBackground(new java.awt.Color(0, 0, 51));
+        lblHOME.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
+        lblHOME.setForeground(new java.awt.Color(255, 78, 0));
+        lblHOME.setText("Inicio");
+        lblHOME.setOpaque(true);
+        lblHOME.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblHOMEMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblHOMEMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lblHOMEMouseExited(evt);
+            }
+        });
+        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 70, 50));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -81,6 +100,24 @@ public class LineasDeEspera extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
+        // TODO add your handling code here:
+        main.lineasDeEspera.setVisible(false);
+        main.lineasDeEspera = null;
+
+        main.mainASYS.setVisible(true);
+    }//GEN-LAST:event_lblHOMEMouseClicked
+
+    private void lblHOMEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseEntered
+        // TODO add your handling code here:
+        lblHOME.setBackground(Color.yellow);
+    }//GEN-LAST:event_lblHOMEMouseEntered
+
+    private void lblHOMEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseExited
+        // TODO add your handling code here:
+        lblHOME.setBackground(Color.black);
+    }//GEN-LAST:event_lblHOMEMouseExited
 
     /**
      * @param args the command line arguments
@@ -128,6 +165,7 @@ public class LineasDeEspera extends javax.swing.JFrame {
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
+    private javax.swing.JLabel lblHOME;
     private javax.swing.JLabel lblIndicacion;
     private javax.swing.JLabel lblLogoComplexNumbers;
     private javax.swing.JLabel lblTema1;

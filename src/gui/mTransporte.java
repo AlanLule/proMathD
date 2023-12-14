@@ -119,8 +119,8 @@ public class mTransporte extends javax.swing.JFrame {
 
     private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
        // TODO add your handling code here:
-       main.fourierSeries.setVisible(false);
-       main.fourierSeries = null;
+       main.mTransporte.setVisible(false);
+       main.mTransporte = null;
        
        main.mainASYS.setVisible(true);
     }//GEN-LAST:event_lblHOMEMouseClicked

@@ -113,8 +113,8 @@ public class proLineal extends javax.swing.JFrame {
 
     private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
        // TODO add your handling code here:
-       main.introduction.setVisible(false);
-       main.introduction = null;
+       main.proLineal.setVisible(false);
+       main.proLineal = null;
        
        main.mainASYS.setVisible(true);
     }//GEN-LAST:event_lblHOMEMouseClicked

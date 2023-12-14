@@ -14,31 +14,34 @@ import javax.swing.JFrame;
  * @author xeon
  */
 public class Main {
-    
+
     public JFrame mainASYS;
-    public JFrame introduction;
-    public JFrame fourierSeries;
-    public JFrame fourierTransform;
-    public JFrame discreteSystem;
-    public Object Planeacion;
-    
+    public JFrame competencias;
+    public JFrame lineasDeEspera;
+    public JFrame planteacion;
+    public JFrame tInventarios;
+    public JFrame mTransporte;
+    public JFrame proLineal;
+    public JFrame desicion;
+
     public Main() {
         mainASYS = new MainProMathD(this);
         //complexNumbersASYS = new ComplexNumbersASYS(this);
         //realGraphASYS = new RealGraphASYS(this);
-        
+
     }
-    
+
     public void run() {
         java.awt.EventQueue.invokeLater(new Runnable() {
-                public void run() {
-                    mainASYS.setVisible(true);
-                }
-            });
+            public void run() {
+                mainASYS.setVisible(true);
+            }
+        });
     }
+
     public static void main(String[] args) {
-                new Main().run();
-        
+        new Main().run();
+
     }
 
     public class Planeacion {

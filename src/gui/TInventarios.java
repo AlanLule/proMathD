@@ -126,8 +126,8 @@ public class TInventarios extends javax.swing.JFrame {
 
     private void lblHOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHOMEMouseClicked
        // TODO add your handling code here:
-       main.fourierTransform.setVisible(false);
-       main.fourierTransform = null;
+       main.tInventarios.setVisible(false);
+       main.tInventarios = null;
        
        main.mainASYS.setVisible(true);
     }//GEN-LAST:event_lblHOMEMouseClicked

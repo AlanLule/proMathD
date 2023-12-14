@@ -266,8 +266,8 @@ public class MainProMathD extends javax.swing.JFrame {
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.introduction = new proLineal(this.main);
-        main.introduction.setVisible(true);        
+        main.proLineal = new proLineal(this.main);
+        main.proLineal.setVisible(true);        
     }//GEN-LAST:event_logproglinealMouseClicked
 
     private void TransformFourierMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourierMouseEntered
@@ -285,24 +285,24 @@ public class MainProMathD extends javax.swing.JFrame {
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.fourierSeries = new mTransporte(this.main);
-        main.fourierSeries.setVisible(true); 
+        main.mTransporte = new mTransporte(this.main);
+        main.mTransporte.setVisible(true); 
     }//GEN-LAST:event_SeriesFourierMouseClicked
 
     private void TransformFourierMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourierMouseClicked
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.fourierTransform = new TInventarios(this.main);
-        main.fourierTransform.setVisible(true);
+        main.tInventarios = new TInventarios(this.main);
+        main.tInventarios.setVisible(true);
     }//GEN-LAST:event_TransformFourierMouseClicked
 
     private void TransformFourier1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier1MouseClicked
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.fourierTransform = new Planeacion(this.main);
-        main.fourierTransform.setVisible(true);
+        main.planteacion = new Planeacion(this.main);
+        main.planteacion.setVisible(true);
     }//GEN-LAST:event_TransformFourier1MouseClicked
 
     private void TransformFourier1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier1MouseEntered
@@ -317,8 +317,8 @@ public class MainProMathD extends javax.swing.JFrame {
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.fourierTransform = new Competencias(this.main);
-        main.fourierTransform.setVisible(true);
+        main.competencias = new Competencias(this.main);
+        main.competencias.setVisible(true);
     }//GEN-LAST:event_TransformFourier2MouseClicked
 
     private void TransformFourier2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier2MouseEntered
@@ -333,8 +333,8 @@ public class MainProMathD extends javax.swing.JFrame {
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.fourierTransform = new LineasDeEspera(this.main);
-        main.fourierTransform.setVisible(true);
+        main.lineasDeEspera = new LineasDeEspera(this.main);
+        main.lineasDeEspera.setVisible(true);
     }//GEN-LAST:event_TransformFourier3MouseClicked
 
     private void TransformFourier3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier3MouseEntered
@@ -349,8 +349,8 @@ public class MainProMathD extends javax.swing.JFrame {
         // TODO add your handling code here:
         main.mainASYS.setVisible(false);
         
-        main.fourierTransform = new Desicion(this.main);
-        main.fourierTransform.setVisible(true);
+        main.desicion = new Desicion(this.main);
+        main.desicion.setVisible(true);
     }//GEN-LAST:event_TransformFourier4MouseClicked
 
     private void TransformFourier4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransformFourier4MouseEntered
