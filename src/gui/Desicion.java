@@ -35,7 +35,6 @@ public class Desicion extends javax.swing.JFrame {
         lblFoot1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jSplitPane1 = new javax.swing.JSplitPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,7 +73,6 @@ public class Desicion extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea1);
 
         pnlComplexNumbers.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 420, 300));
-        pnlComplexNumbers.add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -142,7 +140,6 @@ public class Desicion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
