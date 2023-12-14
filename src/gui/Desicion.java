@@ -33,6 +33,9 @@ public class Desicion extends javax.swing.JFrame {
         lblTema1 = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jSplitPane1 = new javax.swing.JSplitPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,7 +46,7 @@ public class Desicion extends javax.swing.JFrame {
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
         lblComplexNumbers.setText("Teoria de Desicion");
-        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 430, 50));
+        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 310, 50));
 
         lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/teoriaDesicion.png"))); // NOI18N
         lblLogoComplexNumbers.setText("jLabel1");
@@ -52,7 +55,7 @@ public class Desicion extends javax.swing.JFrame {
         lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTema1.setForeground(new java.awt.Color(255, 255, 255));
         lblTema1.setText("Tema 6: Teoria de Desición");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 560, 30));
+        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 220, 30));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot.setText("Alan Rigel Álvarez Lule");
@@ -61,6 +64,17 @@ public class Desicion extends javax.swing.JFrame {
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
         pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 460, -1, -1));
+
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 51));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setRows(5);
+        jTextArea1.setText("campo que se ocupa de estudiar y modelar la toma de decisiones \nen situaciones donde hay incertidumbre y riesgo. Esta rama de \nla matemática se aplica en diversos campos, como la economía, \nla gestión empresarial, la ingeniería, la estadística y la inteligencia \nartificial, entre otros.\nDecisiones bajo incertidumbre.\nCriterios de decisión.\nÁrboles de decisión.\nFunciones de utilidad.\nTeoría de la utilidad esperada.\nRiesgo y aversión al riesgo.\nTeoría de juegos.\n");
+        jScrollPane2.setViewportView(jTextArea1);
+
+        pnlComplexNumbers.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 420, 300));
+        pnlComplexNumbers.add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -127,6 +141,9 @@ public class Desicion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
