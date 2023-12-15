@@ -34,6 +34,14 @@ public class proLineal extends javax.swing.JFrame {
         lblTema1 = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,7 +65,7 @@ public class proLineal extends javax.swing.JFrame {
                 lblHOMEMouseExited(evt);
             }
         });
-        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, 70, 50));
+        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 10, 70, 50));
 
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
@@ -74,28 +82,55 @@ public class proLineal extends javax.swing.JFrame {
         pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 560, 30));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Alan Rigel Álvarez Lule");
-        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, -1, -1));
+        lblFoot.setText("Alan Rigel Álvarez Lule & Andres Rosas Patiño");
+        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 750, 250, -1));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
-        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 460, -1, -1));
+        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 730, -1, -1));
+
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 51));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setRows(5);
+        jTextArea1.setText("método matemático que se utiliza para maximizar o minimizar una \nfunción lineal, sujeta a ciertas restricciones expresadas también de \nmanera lineal. En otras palabras, se trata de encontrar la mejor solución \nposible a un problema, donde tanto la función objetivo (lo que se está \nmaximizando o minimizando) como las restricciones son ecuaciones lineales.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        pnlComplexNumbers.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 480, 110));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/al1.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 400, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/al2.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/al3.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/al6.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 330, -1, 140));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/al4.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, -1, 310));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/al5.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 490, -1, 140));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, 991, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -162,6 +197,14 @@ public class proLineal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;

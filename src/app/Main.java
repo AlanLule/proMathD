@@ -49,4 +49,10 @@ public class Main {
         public Planeacion() {
         }
     }
+
+    public class linealinfo {
+
+        public linealinfo() {
+        }
+    }
 }

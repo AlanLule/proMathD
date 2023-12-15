@@ -132,11 +132,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="33" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Alan Rigel &#xc1;lvarez Lule"/>
+            <Property name="text" type="java.lang.String" value="Alan Rigel &#xc1;lvarez Lule &amp; Andres Rosas Pati&#xf1;o"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="660" y="480" width="-1" height="-1"/>
+              <AbsoluteConstraints x="0" y="480" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -149,10 +149,31 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="660" y="460" width="-1" height="-1"/>
+              <AbsoluteConstraints x="0" y="460" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="100" width="370" height="120"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="os m&#xe9;todos de transporte se refieren a t&#xe9;cnicas de optimizaci&#xf3;n &#xa;utilizadas para asignar eficientemente recursos (como bienes o &#xa;personas) desde m&#xfa;ltiples puntos de origen a m&#xfa;ltiples destinos, &#xa;minimizando los costos totales. Esto a menudo se representa &#xa;mediante modelos matem&#xe1;ticos, como el Problema de Transporte &#xa;en programaci&#xf3;n lineal, donde se busca encontrar la asignaci&#xf3;n &#xa;&#xf3;ptima de recursos sujeta a restricciones de oferta&#xa0;y&#xa0;demanda."/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>

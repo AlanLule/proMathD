@@ -51,7 +51,7 @@ public class MainProMathD extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        bg.setBackground(new java.awt.Color(7, 24, 110));
+        bg.setBackground(new java.awt.Color(0, 0, 51));
         bg.setForeground(new java.awt.Color(204, 204, 204));
         bg.setPreferredSize(new java.awt.Dimension(800, 500));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -136,8 +136,8 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, -1, -1));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Alan Rigel Álvarez Lule");
-        bg.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 480, -1, -1));
+        lblFoot.setText("Alan Rigel Álvarez Lule & Alan Rigel Alvarez lule");
+        bg.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 480, 250, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 102, 51));

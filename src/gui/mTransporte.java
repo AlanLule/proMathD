@@ -36,6 +36,8 @@ public class mTransporte extends javax.swing.JFrame {
         lblTema1 = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -86,12 +88,19 @@ public class mTransporte extends javax.swing.JFrame {
         pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 570, 30));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Alan Rigel Álvarez Lule");
-        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, -1, -1));
+        lblFoot.setText("Alan Rigel Álvarez Lule & Andres Rosas Patiño");
+        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, -1, -1));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
-        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 460, -1, -1));
+        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("os métodos de transporte se refieren a técnicas de optimización \nutilizadas para asignar eficientemente recursos (como bienes o \npersonas) desde múltiples puntos de origen a múltiples destinos, \nminimizando los costos totales. Esto a menudo se representa \nmediante modelos matemáticos, como el Problema de Transporte \nen programación lineal, donde se busca encontrar la asignación \nóptima de recursos sujeta a restricciones de oferta y demanda.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        pnlComplexNumbers.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 370, 120));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -185,6 +194,8 @@ public class mTransporte extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel SeriesFourier;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
