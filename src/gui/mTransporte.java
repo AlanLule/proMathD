@@ -38,6 +38,7 @@ public class mTransporte extends javax.swing.JFrame {
         lblFoot1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,10 +98,13 @@ public class mTransporte extends javax.swing.JFrame {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("os métodos de transporte se refieren a técnicas de optimización \nutilizadas para asignar eficientemente recursos (como bienes o \npersonas) desde múltiples puntos de origen a múltiples destinos, \nminimizando los costos totales. Esto a menudo se representa \nmediante modelos matemáticos, como el Problema de Transporte \nen programación lineal, donde se busca encontrar la asignación \nóptima de recursos sujeta a restricciones de oferta y demanda.");
+        jTextArea1.setText("Los métodos de transporte se refieren a técnicas de optimización \nutilizadas para asignar eficientemente recursos (como bienes o \npersonas) desde múltiples puntos de origen a múltiples destinos, \nminimizando los costos totales. Esto a menudo se representa \nmediante modelos matemáticos, como el Problema de Transporte \nen programación lineal, donde se busca encontrar la asignación \nóptima de recursos sujeta a restricciones de oferta y demanda.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        pnlComplexNumbers.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 370, 120));
+        pnlComplexNumbers.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 380, 130));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mt1.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 70, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,7 +114,9 @@ public class mTransporte extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -194,6 +200,7 @@ public class mTransporte extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel SeriesFourier;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblComplexNumbers;

@@ -30,11 +30,12 @@ public class LineasDeEspera extends javax.swing.JFrame {
         pnlComplexNumbers = new javax.swing.JPanel();
         lblComplexNumbers = new javax.swing.JLabel();
         lblLogoComplexNumbers = new javax.swing.JLabel();
-        lblTema1 = new javax.swing.JLabel();
         lblIndicacion = new javax.swing.JLabel();
-        lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
         lblHOME = new javax.swing.JLabel();
+        lblFoot = new javax.swing.JLabel();
+        lblIndicacion1 = new javax.swing.JLabel();
+        lblIndicacion2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,25 +46,16 @@ public class LineasDeEspera extends javax.swing.JFrame {
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
         lblComplexNumbers.setText("Lineas De Espera");
-        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 430, 50));
+        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 430, 50));
 
         lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/lineaslogo.png"))); // NOI18N
         lblLogoComplexNumbers.setText("jLabel1");
         pnlComplexNumbers.add(lblLogoComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 120));
 
-        lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblTema1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTema1.setText("Tema 4: Lineas de espera ");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 560, 30));
-
         lblIndicacion.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         lblIndicacion.setForeground(new java.awt.Color(255, 255, 255));
-        lblIndicacion.setText("Indicaciones: introduzca dos números complejos para calular las operaciones indicadas.");
-        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 550, 20));
-
-        lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Alan Rigel Álvarez Lule");
-        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 480, -1, -1));
+        lblIndicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/le3.png"))); // NOI18N
+        pnlComplexNumbers.add(lblIndicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, -1, 310));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
@@ -87,6 +79,20 @@ public class LineasDeEspera extends javax.swing.JFrame {
         });
         pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 70, 50));
 
+        lblFoot.setForeground(new java.awt.Color(255, 51, 0));
+        lblFoot.setText("Alan Rigel Álvarez Lule & Andres Rosas Ptiño");
+        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 480, 240, 20));
+
+        lblIndicacion1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        lblIndicacion1.setForeground(new java.awt.Color(255, 255, 255));
+        lblIndicacion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/le1.png"))); // NOI18N
+        pnlComplexNumbers.add(lblIndicacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 420, 110));
+
+        lblIndicacion2.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        lblIndicacion2.setForeground(new java.awt.Color(255, 255, 255));
+        lblIndicacion2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/le2.png"))); // NOI18N
+        pnlComplexNumbers.add(lblIndicacion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, 190));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -95,7 +101,7 @@ public class LineasDeEspera extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -167,8 +173,9 @@ public class LineasDeEspera extends javax.swing.JFrame {
     private javax.swing.JLabel lblFoot1;
     private javax.swing.JLabel lblHOME;
     private javax.swing.JLabel lblIndicacion;
+    private javax.swing.JLabel lblIndicacion1;
+    private javax.swing.JLabel lblIndicacion2;
     private javax.swing.JLabel lblLogoComplexNumbers;
-    private javax.swing.JLabel lblTema1;
     private javax.swing.JPanel pnlComplexNumbers;
     // End of variables declaration//GEN-END:variables
 }

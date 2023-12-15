@@ -136,7 +136,7 @@ public class MainProMathD extends javax.swing.JFrame {
         bg.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, -1, -1));
 
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Alan Rigel Álvarez Lule & Alan Rigel Alvarez lule");
+        lblFoot.setText("Alan Rigel Álvarez Lule & Andres Rosas Patiño");
         bg.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 480, 250, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N

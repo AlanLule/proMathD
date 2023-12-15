@@ -30,10 +30,12 @@ public class Desicion extends javax.swing.JFrame {
         pnlComplexNumbers = new javax.swing.JPanel();
         lblComplexNumbers = new javax.swing.JLabel();
         lblLogoComplexNumbers = new javax.swing.JLabel();
-        lblTema1 = new javax.swing.JLabel();
         lblFoot = new javax.swing.JLabel();
         lblFoot1 = new javax.swing.JLabel();
         lblHOME = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,24 +46,19 @@ public class Desicion extends javax.swing.JFrame {
         lblComplexNumbers.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblComplexNumbers.setForeground(new java.awt.Color(255, 78, 0));
         lblComplexNumbers.setText("Teoria de Desicion");
-        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 430, 50));
+        pnlComplexNumbers.add(lblComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 300, 50));
 
         lblLogoComplexNumbers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/teoriaDesicion.png"))); // NOI18N
         lblLogoComplexNumbers.setText("jLabel1");
         pnlComplexNumbers.add(lblLogoComplexNumbers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 120));
 
-        lblTema1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblTema1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTema1.setText("Tema 6: Teoria de Desición");
-        pnlComplexNumbers.add(lblTema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 560, 30));
-
         lblFoot.setForeground(new java.awt.Color(255, 51, 0));
-        lblFoot.setText("Alan Rigel Álvarez Lule");
-        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 480, -1, -1));
+        lblFoot.setText("Alan Rigel Álvarez Lule & Andres rosas Patiño");
+        pnlComplexNumbers.add(lblFoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 470, -1, -1));
 
         lblFoot1.setForeground(new java.awt.Color(255, 51, 0));
         lblFoot1.setText("ITESS-TICS-2023 Ago-Dic");
-        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 460, -1, -1));
+        pnlComplexNumbers.add(lblFoot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 450, -1, -1));
 
         lblHOME.setBackground(new java.awt.Color(0, 0, 51));
         lblHOME.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
@@ -79,17 +76,26 @@ public class Desicion extends javax.swing.JFrame {
                 lblHOMEMouseExited(evt);
             }
         });
-        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 70, 50));
+        pnlComplexNumbers.add(lblHOME, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 70, 50));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/dede3.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 150, 440, 190));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/dede1.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 420, 90));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/dede2.png"))); // NOI18N
+        pnlComplexNumbers.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 440, 340));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlComplexNumbers, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -164,12 +170,14 @@ public class Desicion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblComplexNumbers;
     private javax.swing.JLabel lblFoot;
     private javax.swing.JLabel lblFoot1;
     private javax.swing.JLabel lblHOME;
     private javax.swing.JLabel lblLogoComplexNumbers;
-    private javax.swing.JLabel lblTema1;
     private javax.swing.JPanel pnlComplexNumbers;
     // End of variables declaration//GEN-END:variables
 }
